@@ -1,0 +1,26 @@
+body{
+	background: #FBF3C1;
+}
+
+h1{
+	color: #309898;
+}
+
+header{
+	width: 40%;
+	background: blue;
+}
+
+header img{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	display: block;
+}
+
+main{
+	width: 60%;
+	background: blue;
+	color: white;
+	text-align: center;
+}
