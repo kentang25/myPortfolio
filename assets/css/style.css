@@ -1,5 +1,5 @@
 body{
-	background: #FBF3C1;
+	background: #0E2148;
 }
 
 h1{
@@ -16,11 +16,14 @@ header img{
 	height: 100vh;
 	object-fit: cover;
 	display: block;
+	position: absolute;
 }
 
 main{
-	width: 60%;
-	background: blue;
 	color: white;
-	text-align: center;
+	flex: 1;
+}
+
+.about{
+	margin-top: 100px;
 }
