@@ -59,11 +59,46 @@ main{
 	flex: 1;
 }
 
+/*--- about ---*/
 .about{
 	margin-top: 100px;
 }
 
+.about img{
+	float: left;
+	border-radius: 10px;
+}
+
+.about p{
+	padding-ri: 100px;
+	/*background: red;*/
+	font-size: 4vh;
+	display: flex;
+	padding: 10px;
+}
+
+/*-- end about ---*/
+
+/*--- my project ---*/
 .working{
+	clear: both;
 	z-index: 1;
 	position: relative;
 }
+
+.dungeons, .fafashion, .futuretrend{
+	width: 500px;
+	height: 300px;
+	border-radius: 25px;
+}
+
+.dungeons, .fafashion, .futuretrend{
+	transition: transform 0.6s ease-in-out;
+}
+
+.dungeons:hover, .fafashion:hover, .futuretrend:hover{
+	transform: scale(1.05);
+	cursor: cell;
+}
+
+/*--- end my project ---*/

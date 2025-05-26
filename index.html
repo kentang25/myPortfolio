@@ -7,6 +7,8 @@
 	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	<style>
 		/*header img {
 			width: 300px;
@@ -31,20 +33,58 @@
 
 			<div class="about">
 				<h2>About Me</h2>
+				<img src="assets/gambar/model-3.png" class="img-fluid" width="300" height="500">
 				<p>Hello, my name is Regi Ridho and I am from Indonesia. I am a junior programmer<br>
 				with a backend focus, especially in PHP. I can also handle frontend with JavaScript, HTML, CSS, and use the Bootstrap framework.<br>
 				And that's me. See you again, my friend.</p>
 			</div>
 
 			<div class="working mt-5">
-				<h2>My Working</h2>
-				<h3>Dungeons</h3>
-				<img src="assets/gambar/bahan/dungeons-1.png" width="500" height="300" class="p-2">
-				<img src="assets/gambar/bahan/dungeons-2.png" width="500" height="300" class="p-2">
-				<img src="assets/gambar/bahan/dungeons-3.png" width="500" height="300" class="p-2">
-				<img src="assets/gambar/bahan/dungeons-6.png" width="500" height="300" class="p-2">
+				<div class="text-center">
+					<h2>My Project</h2>
+				</div>
+				<div class="row mt-5">
+
+					<div class="col-md-4 bahan_project">
+						<h3 class="text-center" id="dungeons">Dungeons</h3>
+						<img src="assets/gambar/bahan/dungeons-1.png" class="img-fluid dungeons p-2">
+						<img src="assets/gambar/bahan/dungeons-2.png" class="img-fluid dungeons p-2 d-none">
+						<img src="assets/gambar/bahan/dungeons-3.png" class="img-fluid dungeons p-2 d-none">
+						<img src="assets/gambar/bahan/dungeons-6.png" class="img-fluid dungeons p-2 d-none">
+					</div>
+					<div class="col-md-4 bahan_project">
+						<h3 class="text-center" id="fafashion">fafashion</h3>
+						<img src="assets/gambar/bahan/fafashion-1.png" class="img-fluid fafashion p-2">
+						<img src="assets/gambar/bahan/fafashion-2.png" class="img-fluid fafashion p-2 d-none">
+						<img src="assets/gambar/bahan/fafashion-3.png" class="img-fluid fafashion p-2 d-none">
+						<img src="assets/gambar/bahan/fafashion-6.png" class="img-fluid fafashion p-2 d-none">
+					</div>
+					<div class="col-md-4 bahan_project">
+						<h3 class="text-center" id="futuretrend">futuretrend</h3>
+						<img src="assets/gambar/bahan/futuretrend-1.png" class="img-fluid futuretrend p-2">
+						<img src="assets/gambar/bahan/futuretrend-2.png" class="img-fluid futuretrend p-2 d-none">
+						<img src="assets/gambar/bahan/futuretrend-3.png" class="img-fluid futuretrend p-2 d-none">
+						<img src="assets/gambar/bahan/futuretrend-6.png" class="img-fluid futuretrend p-2 d-none">
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
 </body>
 </html>
+
+<script>
+$(document).ready(function () {
+  $('.dungeons').first().on('click', function () {
+    // Sembunyikan semua gambar fafashion dan futuretrend
+    $('#fafashion').siblings('img').fadeOut();
+    $('#futuretrend').siblings('img').fadeOut();
+
+    // Tampilkan gambar dungeons yang tersembunyi
+    $('#dungeons').siblings('img.d-none').each(function () {
+      $(this).removeClass('d-none').hide().fadeIn(600);
+    });
+  });
+});
+</script>
+
