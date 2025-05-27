@@ -86,10 +86,17 @@ main{
 	position: relative;
 }
 
+.working h2{
+	margin-top: 50vh;
+	/*background: red;*/
+	text-decoration: underline;
+}
+
 .dungeons, .fafashion, .futuretrend{
 	width: 500px;
 	height: 300px;
 	border-radius: 25px;
+	position: relative;
 }
 
 .dungeons, .fafashion, .futuretrend{
@@ -98,7 +105,70 @@ main{
 
 .dungeons:hover, .fafashion:hover, .futuretrend:hover{
 	transform: scale(1.05);
-	cursor: cell;
+	cursor: pointer;
+}
+
+#dungeons,#fafashion,#futuretrend{
+	position: relative;
+}
+
+.dungeons, #dungeons, .futuretrend, #futuretrend{
+	animation: jedagJedug 3.9s infinite;
+}
+
+.fafashion, #fafashion{
+	animation: jedagJedug2 2.9s infinite;
+}
+
+@keyframes jedagJedug{
+	0%{
+		top: 100px;
+	}
+	50%{
+		top: 50px;
+	}
+	100%{
+		top: 100px;
+	}
+}
+
+@keyframes jedagJedug2{
+	0%{
+		top: 100px;
+	}
+	50%{
+		top: 50px;
+	}
+	100%{
+		top: 100px;
+	}
 }
 
 /*--- end my project ---*/
+
+
+/*--- footer ---*/
+
+footer {
+  position: relative;
+  height: 150px; /* Tinggi footer */
+  overflow: hidden; /* Penting agar hanya bagian atas bulan yang terlihat */
+  
+}
+
+.bulan-container {
+  position: absolute;
+  bottom: -500%; /* Geser bulan ke bawah agar hanya setengah atasnya terlihat */
+  left: 0;
+  width: 100%;
+}
+
+.bulan {
+  width: 100%; /* Full width */
+  height: auto;
+  display: block;
+}
+
+
+
+/*--- end footer ---*/
