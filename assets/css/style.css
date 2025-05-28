@@ -151,24 +151,29 @@ main{
 
 footer {
   position: relative;
-  height: 150px; /* Tinggi footer */
+  height: 500px; /* Tinggi footer */
   overflow: hidden; /* Penting agar hanya bagian atas bulan yang terlihat */
-  
+  /*background-color: black;*/
 }
 
 .bulan-container {
   position: absolute;
-  bottom: -500%; /* Geser bulan ke bawah agar hanya setengah atasnya terlihat */
+  bottom: -100%; /* Geser bulan ke bawah agar hanya setengah atasnya terlihat */
   left: 0;
   width: 100%;
 }
 
 .bulan {
+	background: cover;
   width: 100%; /* Full width */
   height: auto;
   display: block;
 }
 
+.modal-dialog{
+	background-image: url('../assets/gambar/bahan/bintang.png');
+	height: 100%;
+}
 
 
 /*--- end footer ---*/
