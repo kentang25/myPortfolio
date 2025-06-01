@@ -120,6 +120,20 @@ main{
 	animation: jedagJedug2 2.9s infinite;
 }
 
+.img-dungeons{
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+
+.custom-content-bg{
+	/*background-image: url('../../assets/gambar/bahan/bintang.png');*/
+	background: #0E2148;
+	background-size: cover;
+	/*height: 100%;*/
+	/*background-color: red;*/
+}
+
 @keyframes jedagJedug{
 	0%{
 		top: 100px;
@@ -170,10 +184,8 @@ footer {
   display: block;
 }
 
-.modal-dialog{
-	background-image: url('../assets/gambar/bahan/bintang.png');
-	height: 100%;
-}
-
-
 /*--- end footer ---*/
+
+
+
+
