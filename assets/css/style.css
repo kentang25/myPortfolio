@@ -1,4 +1,10 @@
+@font-face{
+	font-family: ASTRII__;
+	src:url('../../assets/font/ASTRII__.ttf') format('truetype');
+}
+
 body {
+	font-family: 'ASTRII__', sans-serif;
 	margin: 0;
 	/*overflow: hidden;*/
 	background: #0E2148;
@@ -75,6 +81,27 @@ main{
 	font-size: 4vh;
 	display: flex;
 	padding: 10px;
+}
+
+#astronot{
+	width: 300px;
+	height: 400px;
+	margin-bottom: 100px;
+	position: relative;
+	float: right;
+	animation: astronot 2.9s infinite;
+}
+
+@keyframes astronot{
+	0%{
+		top: 100px;
+	}
+	50%{
+		top: 50px;
+	}
+	100%{
+		top: 100px;
+	}
 }
 
 /*-- end about ---*/
@@ -160,6 +187,16 @@ main{
 
 /*--- end my project ---*/
 
+/*--- animted ---*/
+
+.img-rocket{
+	position: fixed;
+	top: 550px;
+	transition: transform 0.2s ease-out;
+	z-index: -1;
+}
+
+/*--- end animted ---*/
 
 /*--- footer ---*/
 
