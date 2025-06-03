@@ -7,7 +7,7 @@ $(document).ready(function(){
           "top"   : "700px",
           "left"  : "-300px",
           "width" : "35px",
-          "z-index" : "-1"
+          "z-index" : "-2"
         });
         bergerak();
       });

@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	/*overflow: hidden;*/
 	background: #0E2148;
+	color: white;
 }
 
 .starfield {
@@ -42,15 +43,10 @@ body {
 	}
 }
 */
-
+/*--- header ---*/
 h1{
 	color: #309898;
 }
-/*
-header{
-	width: 40%;
-	background: blue;
-}*/
 
 header img{
 	width: 100%;
@@ -64,6 +60,8 @@ main{
 	color: white;
 	flex: 1;
 }
+
+/*--- end header ---*/
 
 /*--- about ---*/
 .about{
@@ -84,10 +82,13 @@ main{
 }
 
 #astronot{
-	width: 300px;
-	height: 400px;
-	margin-bottom: 100px;
+	/*display: block;
+	background-color: red;*/
+	width: auto;
+	height: 60vh;
 	position: relative;
+	/*top: -1000px;*/
+	margin-bottom: 100px;
 	float: right;
 	animation: astronot 2.9s infinite;
 }
@@ -193,33 +194,117 @@ main{
 	position: fixed;
 	top: 550px;
 	transition: transform 0.2s ease-out;
-	z-index: -1;
+	z-index: -2;
 }
 
 /*--- end animted ---*/
 
+/* --- keahlian --- */
+.keahlian{
+		margin-top: 30vh;
+}
+
+.bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.nilai {
+    display: block;
+    height: 100%;
+    line-height: 25px;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6dd5ed, #2193b0);
+}
+
+.nilai.html { width: 100%; }
+.nilai.css { width: 100%; }
+.nilai.js { width: 80%; }
+.nilai.php { width: 80%; }
+
+
+/* --- end keahlian --- */
+
 /*--- footer ---*/
 
-footer {
+
+/*@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');*/
+footer{
+	margin-top: 20vh;
+	margin-bottom: 5vh;
+}
+
+.space-note {
+  font-family: 'ASTRII__', sans-serif;
   position: relative;
-  height: 500px; /* Tinggi footer */
-  overflow: hidden; /* Penting agar hanya bagian atas bulan yang terlihat */
-  /*background-color: black;*/
+  padding: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  background: radial-gradient(circle at top left, #1b2735, #090a0f);
+  color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2), 0 0 50px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 }
 
-.bulan-container {
+/* Efek bintang animasi */
+.space-note::before {
+  content: "";
   position: absolute;
-  bottom: -100%; /* Geser bulan ke bawah agar hanya setengah atasnya terlihat */
-  left: 0;
-  width: 100%;
+  top: 0; left: 0;
+  width: 300%; height: 300%;
+  background: url('../../assets/gambar/bahan/background-3.png') repeat;
+  animation: moveStars 80s linear infinite;
+  opacity: 0.1;
+  z-index: 0;
 }
 
-.bulan {
-	background: cover;
-  width: 100%; /* Full width */
-  height: auto;
-  display: block;
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-1000px, -1000px); }
 }
+
+.space-note * {
+  position: relative;
+  z-index: 1;
+}
+
+.space-note legend {
+  font-size: 1.8em;
+  color: #00ffff;
+  padding: 0 10px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff88;
+}
+
+.space-note p {
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 10px #00ffff88;
+}
+
+.space-note h3 {
+  color: #a0e8ff;
+  margin-top: 20px;
+}
+
+.space-note span {
+	font-weight: bold;
+	font-size: 1.5em;
+	text-shadow: 0 0 10px #00ffff88;
+  display: block;
+  margin-bottom: 10px;
+}
+}
+
 
 /*--- end footer ---*/
 
