@@ -1,6 +1,6 @@
 @font-face{
-	font-family: ASTRII__;
-	src:url('../../assets/font/ASTRII__.ttf') format('truetype');
+	font-family: 'ASTRII__';
+  	src: url('/myPortfolio/assets/font/ASTRII__.ttf') format('truetype');
 }
 
 body {
