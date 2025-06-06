@@ -7,6 +7,7 @@ body {
 	font-family: 'ASTRII__', sans-serif;
 	margin: 0;
 	/*overflow: hidden;*/
+	padding-top: 70px; /* supaya konten tidak ketutup navbar */
 	background: #0E2148;
 	color: white;
 }
@@ -33,28 +34,34 @@ body {
 }
 
 
-/*@keyframes moveBackground{
-	0%{
-		background-position: 0px 0px;
-	}
+/*--- navabar ---*/
 
-	100%{
-		background-position: 1000px 1000px;
-	}
+.navbar-brand {
+  font-size: 1.25rem;
 }
-*/
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #0dcaf0 !important; /* warna biru neon saat hover */
+}
+
+
+/*--- end navabar ---*/
+
+
 /*--- header ---*/
 h1{
-	color: #309898;
+	font-size: 3.5m;
+  color: #00ffff;
+  padding: 0 10px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff88;
 }
 
-header img{
-	width: 100%;
-	/*height: 100vh;*/
-	object-fit: cover;
-	display: block;
-	position: absolute;
-}
+
 
 main{
 	color: white;
@@ -68,9 +75,27 @@ main{
 	margin-top: 100px;
 }
 
+.about h2{
+	text-decoration: underline;
+}
+
+.modal-3{
+	border-radius: 10px;
+	width: 40vw;
+	height: 100vh;
+	align-items: center;
+}
+
+/*.col-md-4{
+	background-color: red;
+	align-items: center;
+}*/
+
 .about img{
 	float: left;
 	border-radius: 10px;
+	width: 25vw;
+	height: 60vh;
 }
 
 .about p{
@@ -125,6 +150,7 @@ main{
 	height: 300px;
 	border-radius: 25px;
 	position: relative;
+	box-sizing: box-sizing;
 }
 
 .dungeons, .fafashion, .futuretrend{
@@ -204,6 +230,10 @@ main{
 		margin-top: 30vh;
 }
 
+.keahlian h2{
+	text-decoration: underline;
+}
+
 .bar {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -240,6 +270,7 @@ main{
 footer{
 	margin-top: 20vh;
 	margin-bottom: 5vh;
+	padding: 2rem 1rem;
 }
 
 .space-note {
@@ -303,11 +334,30 @@ footer{
   display: block;
   margin-bottom: 10px;
 }
-}
+
 
 
 /*--- end footer ---*/
 
 
+/*--- mobile ---*/
+
+@media (max-width: 768px) {
+  #astronot {
+    max-width: auto;
+    position: relative;
+    top: 1000px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    margin-bottom: 150px;
+    display: block;
+  }
+
+  #dungeons,#fafashion,#futuretrend{
+  	margin-top: 20px;
+  }
+}
 
 
+
+/*--- end mobile ---*/
