@@ -358,7 +358,7 @@ footer{
   }
 
   .space-note{
-  	padding: 15px;
+  	padding: 10px;
   }
 
   .space-note legend,
@@ -368,7 +368,7 @@ footer{
 
   .space-note h3,
   .space-note span{
-  	font-size: 1.5em;
+  	font-size: 1.0em;
   }
 }
 
