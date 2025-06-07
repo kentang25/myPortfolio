@@ -356,6 +356,20 @@ footer{
   #dungeons,#fafashion,#futuretrend{
   	margin-top: 20px;
   }
+
+  .space-note{
+  	padding: 20px;
+  }
+
+  .space-note legend,
+  .space-note p{
+  	font-size: 0.8em;
+  }
+
+  .space-note h3,
+  .space-note span{
+  	font-size: 0.8em;
+  }
 }
 
 
