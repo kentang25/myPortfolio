@@ -358,17 +358,17 @@ footer{
   }
 
   .space-note{
-  	padding: 20px;
+  	padding: 15px;
   }
 
   .space-note legend,
   .space-note p{
-  	font-size: 0.8em;
+  	font-size: 1.5em;
   }
 
   .space-note h3,
   .space-note span{
-  	font-size: 0.8em;
+  	font-size: 1.5em;
   }
 }
 
